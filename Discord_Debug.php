@@ -28,7 +28,7 @@ function debugToDiscord( $message ) {
     }
 
     //  cURL settings for all output to Discord
-    $ch = curl_init( "https://discordapp.com/api/webhooks/797986965525233675/nKNJfVkekl0_MH9TwdlRxbcEn8iAdYVKoK8KuW0uLzm2qgrNoZgcTRvp_QnOuUW8ioPV" );
+    $ch = curl_init( "" );  //  place your discord webhook url here
     curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
     curl_setopt( $ch, CURLOPT_POST, 1);
     curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
